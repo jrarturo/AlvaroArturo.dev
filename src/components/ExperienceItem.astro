@@ -1,0 +1,61 @@
+---
+interface Props {
+  title: string
+  company: string
+  location: string
+  dates: string
+  description: string
+  technologies: string[]
+  link?: string
+}
+const { title, company, location, dates, description, technologies, link } =
+  Astro.props
+---
+
+<div
+  class='absolute size-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700'
+>
+</div>
+<time
+  class='mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500'
+>
+  {dates}
+</time>
+<h2 class='text-xl font-semibold text-gray-900 dark:text-white'>
+  {title}
+</h2>
+<h3 class='text-1xl font-light italic text-gray-800 dark:text-white opacity-60'>
+  {company}
+</h3>
+<h3
+  class='mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500'
+>
+  {location}
+</h3>
+<p
+  class='py-3 mb-4 text-base font-normal text-gray-500 dark:text-gray-400 text-pretty'
+>
+  {description}
+</p>
+<div class='flex flex-wrap gap-2 pb-3'>
+  {
+    technologies.map((technology) => (
+      <span class='px-2 py-1 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600'>
+        {technology}
+      </span>
+    ))
+  }
+</div>
+
+{
+  link && (
+    <a
+      href={link}
+      class='px-2 py-1 text-xs font-small text-white opacity-80 hover:opacity-100'
+      target='_blank'
+      rel='noopener noreferrer'
+    >
+      Learn More... 👀
+    </a>
+  )
+}

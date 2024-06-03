@@ -1,0 +1,99 @@
+---
+import ExperienceItem from '../components/ExperienceItem.astro'
+
+const EXPERIENCE = [
+  {
+    title: 'Sr. Software Engineer',
+    company: 'CoverWallet, an Aon company',
+    location: 'Bogota, D.C., Capital District, Colombia · Remote',
+    dates: 'Jun 2023 - Present',
+    description: `At Coverwallet, I primarily focused on developing and enhancing frontend applications using 
+      Vue.js and React. I played a significant role in improving the user experience and interface 
+      of the Aon Digital platform. Additionally, I contributed to backend/plataform development using Node.js 
+      (AWS Lambda functions), .NET Core, CI/CD pipeline improved the platform’s performance, and implemented new features. 
+      `,
+    technologies: ['React', 'Vue.js', 'Node.js', 'AWS', '.Net Core'],
+    link: 'https://www.aondigital.com/'
+  },
+  {
+    title: 'Software Engineer',
+    company: 'TINET S.A.',
+    location: 'Colombia · Remote',
+    dates: 'Aug 2022 - Aug 2023',
+    description: `I contribute to developing website components and applications managing car 
+      dealerships under the same codebase for an international client. I reach out 
+      to 4 modules for the 'Buying Process', warranties, and insurances, from scratch 
+      to production reaching out to 100% of standards. I achieved the delivery time by 
+      90% from each module to allow the client to improve the user experience.`,
+    technologies: [
+      'React',
+      'Redux',
+      'TypeScript',
+      'Node.js',
+      'Storybook',
+      'Tailwind CSS',
+      'Contentful'
+    ],
+    link: 'https://www.americar.com/'
+  },
+  {
+    title: 'Ssr. Web UI Developer',
+    company: 'Globant',
+    location: 'Colombia · Remote',
+    dates: 'Jun 2021 - Jun 2022',
+    description: `I create an interface from scratch with high-level validations among the technologies 
+      I used are Angular, GraphQL, NodeJs, Figma, GIT, Jira, and some JS libraries. 
+      Implemented single sign-on (SSO) functionality, allowing users to access multiple 
+      Walmart services with a single authentication. Improve the registered time for 
+      sellers and providers by 80% for Walmart.`,
+    technologies: [
+      'Angular',
+      'RXJX',
+      'GraphQL',
+      'Apollo client',
+      'Node.js',
+      'Figma',
+      'GIT',
+      'Jira'
+    ],
+    link: 'https://www.walmart.com/'
+  },
+  {
+    title: 'Full Stack Developer',
+    company: 'Healt Care',
+    location: 'Colombia · Remote',
+    dates: 'Dec 2019 - Jun 2021',
+    description: `Led the implementation and development of a comprehensive Healthcare ERP system 
+      for managing an entire clinic center, and actively participated in code reviews, 
+      and quality assurance processes. Successfully delivered 5 modules, 
+      including accounting and human resources, to production, contributing to the overall 
+      functionality and efficiency of the ERP system. Developed and managed robust databases,
+      ensuring the smooth operation of the applications and seamless data integration. 
+      Develop and manage well-functioning databases and applications`,
+    technologies: [
+      'C#',
+      'Figma',
+      'Angular Material',
+      'Microsoft SQL Server',
+      'SQL Server Integration Services (SSIS)',
+      'Entity Framework',
+      'Microservices',
+      'Angular',
+      'SASS',
+      '.NET Core',
+      'Azure DevOps Server'
+    ],
+    link: 'https://clinicardiopabon.com/'
+  }
+]
+---
+
+<ol class='relative border-s border-gray-200 dark:border-gray-700 ml-4'>
+  {
+    EXPERIENCE.map((experience) => (
+      <li class='mb-10 ms-4'>
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>
