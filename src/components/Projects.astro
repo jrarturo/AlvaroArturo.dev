@@ -1,0 +1,35 @@
+---
+const PROJECTS = [
+  {
+    title: 'Project 1',
+    description: 'This is a description of project 1',
+    image: 'https://via.placeholder.com/150',
+    link: 'https://www.google.com'
+  },
+  {
+    title: 'Project 2',
+    description: 'This is a description of project 2',
+    image: 'https://via.placeholder.com/150',
+    link: 'https://www.google.com'
+  },
+  {
+    title: 'Project 3',
+    description: 'This is a description of project 3',
+    image: 'https://via.placeholder.com/150',
+    link: 'https://www.google.com'
+  }
+]
+---
+
+{
+  PROJECTS.map(({ title, description, image, link }) => (
+    <div>
+      <h2>{title}</h2>
+      <p>{description}</p>
+      <a href={link} target='_blank' rel='noopener noreferrer'>
+        View this project
+      </a>
+      <img src={image} alt={title} />
+    </div>
+  ))
+}
