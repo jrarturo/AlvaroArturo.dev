@@ -1,35 +1,172 @@
 ---
+import ReactIcon from './icons/stack/ReactIcon.astro'
+import VueJS from './icons/stack/VueJS.astro'
+import Angular from './icons/stack/Angular.astro'
+import TypeScript from './icons/stack/TypeScript.astro'
+import NextJS from './icons/stack/NextJS.astro'
+import NodeJS from './icons/stack/NodeJS.astro'
+import ExpressJS from './icons/stack/ExpressJS.astro'
+import DotNet from './icons/stack/DotNet.astro'
+import Tailwind from './icons/stack/Tailwind.astro'
+import Redux from './icons/stack/Redux.astro'
+import AWS from './icons/stack/AWS.astro'
+
+const TAGS = {
+  REACT: {
+    name: 'React',
+    class: 'bg-[#24272e] text-[#75c2d9]',
+    icon: ReactIcon
+  },
+  VUE: {
+    name: 'Vue.js',
+    class: 'bg-[#1a1a1a] text-[#65b687]',
+    icon: VueJS
+  },
+  ANGULAR: {
+    name: 'Angular',
+    class: 'bg-black text-white',
+    icon: Angular
+  },
+  TYPESCRIPT: {
+    name: 'TypeScript',
+    class: 'bg-black text-white',
+    icon: TypeScript
+  },
+  NEXT: {
+    name: 'Next.js',
+    class: 'bg-black text-white',
+    icon: NextJS
+  },
+  NODE: {
+    name: 'Node.js',
+    class: 'bg-green-500 text-white',
+    icon: NodeJS
+  },
+  EXPRESS: {
+    name: 'Express',
+    class: 'bg-gray-500 text-white',
+    icon: ExpressJS
+  },
+  DOTNET: {
+    name: 'DotNet',
+    class: 'bg-blue-500 text-white',
+    icon: DotNet
+  },
+  TAILWIND: {
+    name: 'TailwindCSS',
+    class: 'bg-white text-[#73bcf6]',
+    icon: Tailwind
+  },
+  REDUX: {
+    name: 'Redux',
+    class: 'bg-gray-500 text-white',
+    icon: Redux
+  },
+  AWS: {
+    name: 'AWS',
+    class: 'bg-yellow-500 text-white',
+    icon: AWS
+  }
+}
 const PROJECTS = [
   {
-    title: 'Project 1',
-    description: 'This is a description of project 1',
-    image: 'https://via.placeholder.com/150',
-    link: 'https://www.google.com'
+    title: 'AON - Partner Risk Insights',
+    description: `Application helps organizations manage 
+    third-party risks by transforming verification into certification. 
+    The platform offers real-time data and analytics, providing transparency into third-party insurance compliance, 
+    streamlining the certification process, and ensuring business continuity.`,
+    image: '/projects/insight.webp',
+    link: 'https://www.aondigital.com',
+    tags: [
+      TAGS.REACT,
+      TAGS.ANGULAR,
+      TAGS.VUE,
+      TAGS.TYPESCRIPT,
+      TAGS.NEXT,
+      TAGS.NODE,
+      TAGS.EXPRESS,
+      TAGS.DOTNET,
+      TAGS.TAILWIND,
+      TAGS.REDUX,
+      TAGS.AWS
+    ]
   },
   {
     title: 'Project 2',
     description: 'This is a description of project 2',
     image: 'https://via.placeholder.com/150',
-    link: 'https://www.google.com'
+    link: 'https://www.google.com',
+    tags: [
+      TAGS.REACT,
+      TAGS.ANGULAR,
+      TAGS.VUE,
+      TAGS.TYPESCRIPT,
+      TAGS.NEXT,
+      TAGS.NODE,
+      TAGS.EXPRESS,
+      TAGS.DOTNET,
+      TAGS.TAILWIND,
+      TAGS.REDUX,
+      TAGS.AWS
+    ]
   },
   {
     title: 'Project 3',
     description: 'This is a description of project 3',
     image: 'https://via.placeholder.com/150',
-    link: 'https://www.google.com'
+    link: 'https://www.google.com',
+    tags: [
+      TAGS.REACT,
+      TAGS.ANGULAR,
+      TAGS.VUE,
+      TAGS.TYPESCRIPT,
+      TAGS.NEXT,
+      TAGS.NODE,
+      TAGS.EXPRESS,
+      TAGS.DOTNET,
+      TAGS.TAILWIND,
+      TAGS.REDUX,
+      TAGS.AWS
+    ]
   }
 ]
+// 'JavaScript', 'React', 'Vue.js', 'Angular', 'TypeScript', 'Next.js', 'Node.js', 'Express', '.NET Core', 'TailwindCSS', 'Redux', 'AWS', 'Cloudfare', 'Docker', 'GraphQL', 'Apollo', 'REST', 'API', 'PostgreSQL', 'SQL', 'Jenkins', 'GitLab', 'Contentful', 'GitHub', 'Git', 'Bitbucket', 'Jira', 'Confluence', 'Slack'
 ---
 
 {
-  PROJECTS.map(({ title, description, image, link }) => (
-    <div>
-      <h2>{title}</h2>
-      <p>{description}</p>
-      <a href={link} target='_blank' rel='noopener noreferrer'>
+  PROJECTS.map(({ title, description, image, link, tags }) => (
+    <article class='px-7'>
+      <h3 class='text-2xl font-semibold text-gray-900 dark:text-white mb-3 mt-2'>
+        {title}
+      </h3>
+      <p class='py-3 mb-4 text-base font-normal text-gray-500 dark:text-gray-400 text-pretty'>
+        {description}
+      </p>
+      <ul class='flex gap-x-2 flex-row flex-wrap justify-center'>
+        {tags.map((tag) => (
+          <li>
+            <span
+              class={`${tag.class} flex gap-x-2 mb-2 rounded-full text-xs py-0.5 px-1 border border-gray-300 dark:border-gray-700 dark:bg-gray-800 dark:text-white`}
+            >
+              <tag.icon class='size-4' />
+              {tag.name}
+            </span>
+          </li>
+        ))}
+      </ul>
+      <a
+        class='py-3 mb-4 text-base font-normal text-gray-500 my-3'
+        href={link}
+        target='_blank'
+        rel='noopener noreferrer'
+      >
         View this project
       </a>
-      <img src={image} alt={title} />
-    </div>
+      <img
+        class='rounded shadow-2xl shadow-white/15 mt-3'
+        src={image}
+        alt={title}
+      />
+    </article>
   ))
 }

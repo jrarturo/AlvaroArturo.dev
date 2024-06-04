@@ -1,54 +1,48 @@
-# Astro Starter Kit: Basics
+# Alvaro's Professional Portfolio
+
+Welcome to my professional portfolio! I'm Alvaro, a Software Developer from Colombia 🇨🇴 with over 4 years of experience in JavaScript, React.js, Vue.js, Angular, Node.js, and .Net Core. I am always eager to learn and explore new technologies.
+
+## About Me
+
+Hey, I'm Alvaro. I am passionate about software development and have a strong background in both frontend and backend technologies. My expertise lies in creating scalable, efficient, and user-friendly applications. I thrive in collaborative environments and enjoy tackling challenging projects.
+
+## Experience
+
+### Sr. Software Engineer
+**CoverWallet, an Aon company**  
+*Bogota, D.C., Capital District, Colombia - Remote*  
+*June 2023 - Present*
+
+At CoverWallet, I focus on developing and enhancing frontend applications using Vue.js and React. I also contribute to backend development using Node.js (AWS Lambda functions) and .NET Core, leveraging AWS services to create scalable and efficient solutions.
+
+## Skills
+
+- **Languages:** JavaScript, TypeScript, C#
+- **Frontend:** React.js, Vue.js, Angular
+- **Backend:** Node.js, .Net Core
+- **Cloud:** AWS (Lambda, DynamoDB, S3)
+- **Other:** Agile methodologies, Scrum
+
+## Projects
+
+### Aon Digital
+Contributed to the development of the Aon Digital platform, enhancing the insurance management experience for small businesses by integrating innovative solutions and streamlining processes.
+
+## Development Setup
+
+This project uses Astro, Tailwind CSS, and TypeScript. Below are the steps to set up and run the project locally.
+
+### Prerequisites
+
+Ensure you have the following installed:
+- [Node.js](https://nodejs.org/) (v14.0.0 or later)
+- [npm](https://www.npmjs.com/)
+
+### Installation
+
+Clone the repository and install the dependencies:
 
 ```sh
-npm create astro@latest -- --template basics
-```
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+git clone https://github.com/alvaro/portfolio-dev.git
+cd portfolio-dev
+npm install
