@@ -6,27 +6,8 @@ Welcome to my professional portfolio! I'm Alvaro, a Software Developer from Colo
 
 Hey, I'm Alvaro. I am passionate about software development and have a strong background in both frontend and backend technologies. My expertise lies in creating scalable, efficient, and user-friendly applications. I thrive in collaborative environments and enjoy tackling challenging projects.
 
-## Experience
+![image](https://github.com/jrarturo/AlvaroArturo.dev/assets/62453825/4e65e892-98e2-43cd-8f9b-556bd65cca95)
 
-### Sr. Software Engineer
-**CoverWallet, an Aon company**  
-*Bogota, D.C., Capital District, Colombia - Remote*  
-*June 2023 - Present*
-
-At CoverWallet, I focus on developing and enhancing frontend applications using Vue.js and React. I also contribute to backend development using Node.js (AWS Lambda functions) and .NET Core, leveraging AWS services to create scalable and efficient solutions.
-
-## Skills
-
-- **Languages:** JavaScript, TypeScript, C#
-- **Frontend:** React.js, Vue.js, Angular
-- **Backend:** Node.js, .Net Core
-- **Cloud:** AWS (Lambda, DynamoDB, S3)
-- **Other:** Agile methodologies, Scrum
-
-## Projects
-
-### Aon Digital
-Contributed to the development of the Aon Digital platform, enhancing the insurance management experience for small businesses by integrating innovative solutions and streamlining processes.
 
 ## Development Setup
 
